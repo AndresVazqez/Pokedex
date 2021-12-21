@@ -1,0 +1,220 @@
+
+.container {
+    //background: #ffc300;
+    background: rgb(29, 28, 28);
+    background-image: url(./Images/Pokemon.png);    
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% 0.07%;    
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 25px;    
+
+    @include desktop {
+        padding-top: 400px;
+        background-position: 50% 0.3%;
+        background-size: 60%;
+    }    
+
+    h1 {
+        font-family: 'Rubik', sans-serif;; 
+        text-align: center;
+        font-size: 40px;
+        color: white;        
+
+        @include desktop {
+            font-size: 65px;
+        }
+    }
+
+    .finder {
+        text-align: center;
+        margin: 10px auto;
+        display: flex;
+        width: 250px;
+        padding: 8px;
+        border: none;
+        outline: none;
+        box-sizing: content-box;        
+        border-bottom: 3px solid #2872b9;            
+    }
+
+    .btn {
+        width: 130px;
+        margin: 0 auto 10px;
+        padding: 7px;
+        background: #2872b9;
+        color: white;
+        font-weight: 600;
+        border: none;
+
+        &:hover{
+            background: #4784bd;
+        }
+
+        &:focus {
+            background: #2872b9;
+        }
+    }
+
+    .btnReset {
+        width: 165px;
+        margin: 0 auto 20px;
+        padding: 7px;
+        background: #2872b9;
+        color: white;
+        font-weight: 600;
+        border: none;
+
+        &:hover{
+            background: #4784bd;
+        }
+
+        &:focus {
+            background: #2872b9;
+        }
+    }
+
+    #searchPoke {
+        display: flex;
+        flex-wrap: wrap;        
+        justify-content: space-evenly;                      
+
+         li { 
+            display: flex;
+            flex-direction: column;
+            background-image: url(./Images/fondocards.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;           
+            margin: 20px;            
+            border: 10px solid #ffc300; 
+            padding: 10px;
+            border-radius: 20px 0px;
+            width: 300px;
+            box-shadow: 0px 0px 10px whitesmoke;
+
+            &:hover {                             
+                box-shadow: 0px 0px 30px yellow;
+            }
+            
+            .btnDelete {               
+                background: red;
+                color: white;
+                outline: none;
+                width: 25px;
+            }
+
+            p {
+                text-align: left;
+                margin: 5px;
+
+                span {
+                    font-weight: 600;
+                }
+            }
+            
+            .pokeName {
+                color: black;
+                margin-bottom:  10px;
+                background-color: rgba(255,255,255,0.7);
+                font-size: 20px;
+                font-weight: 600;
+                padding: 7px;
+                text-align: center;               
+                
+            }
+
+            .divCards {
+                background-image: url(./Images/cardsPokemon.png);
+                background-size: cover;
+                border: 5px solid lightgray;
+                border-radius: 0px 20px;
+                border-bottom: 12px solid lightgray;
+                margin-bottom: 15px;                
+                
+
+                .image {                
+                    height: 250px;
+                    width: 250px;                    
+                }
+            }                    
+        }
+    }
+
+
+    #pokedex {              
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;                      
+
+         li  { 
+            display: flex;
+            flex-direction: column;
+            background-image: url(./Images/fondocards.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;           
+            margin: 20px;
+            text-align: center;
+            border: 10px solid  rgb(255,195,0);//#ffc300; //#fde66d;
+            padding: 10px;
+            border-radius: 20px 0px;
+            width: 300px;
+            box-shadow: 0px 0px 10px whitesmoke;
+
+            &:hover {                
+                box-shadow: 0px 0px 20px yellow;
+            }
+
+            p {           
+                text-align: left;                
+                background-color: rgba(255,255,255,0.7);
+                padding: 5px;                
+
+                span{
+                    font-weight: 600;
+                }
+            }
+            
+            .pokeName {
+                color: black;
+                margin-bottom:  10px;
+                background-color: rgba(255,255,255,0.7);
+                font-size: 20px;
+                font-weight: 600;
+                padding: 7px;                             
+                
+            }
+
+            .divCards {
+                background-image: url(./Images/cardsPokemon.png);
+                background-size: cover;
+                border: 5px solid lightgray;
+                border-radius: 0px 20px;
+                border-bottom: 12px solid lightgray;
+                margin-bottom: 15px;                
+                
+
+                .image {                
+                    height: 250px;
+                    width: 250px;                    
+                }
+            }            
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background: #4784bd;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    strong {
+        font-size: 12px;
+        color:whitesmoke;
+    }    
+}
