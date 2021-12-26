@@ -16,9 +16,8 @@ const pokemonPet = async () =>  {
     }
     printPokemons ();    
 }
+console.log(allPoke);   
 
-console.log(allPoke);
-   
 const printPokemons = () => {
     for (const pokemon of allPoke){
         const li$$ = document.createElement('li');
@@ -26,7 +25,7 @@ const printPokemons = () => {
         `<h1 class="pokeName">${pokemon.name.toUpperCase()}</h1>
         <div class="divCards"><img src="${pokemon.sprites.other.dream_world.front_default}" class="image"/></div>
         <p><span>Id:</span> ${pokemon.id}</p>
-        <p><span>Tipo:</span> ${pokemon.types[0].type.name.toUpperCase()}</p>
+        <p><span>Tipo:</span> ${pokemon.types[0].type.name.toUpperCase()}</p>  
         <p><span>Peso:</span> ${pokemon.weight/10} Kgs</p>`       
         ol$$.appendChild(li$$);       
     }    
